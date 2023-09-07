@@ -9,3 +9,11 @@ body {
     background: white;
     color: #fff;
 }
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../PERSONAL-PORTFOLIO/images/vivid-blurred-colorful-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
