@@ -37,34 +37,80 @@
                 <p>Hey there! I'm a Full Stack Developer with a keen interest in AI. From crafting user-friendly frontends to optimizing backend logic, I love blending traditional web development with a touch of machine intelligence. I'm on the hunt for a software engineering role where I can contribute my skills and learn even more. Let's create something amazing together!</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onClick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onClick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Full Stack Engineering</span>Proficiency in Frontend and Backend Languages/Frameworks</li>
-                        <li><span>Web Development</span>Database management and API utilization in Web Applications</li>
-                        <li><span>App Development</span>Building Android/iOS apps</li>
+                        <li><span>Full Stack Engineering</span><br>Proficiency in Frontend and Backend Languages/Frameworks</li>
+                        <li><span>Web Development</span><br>Database management and API utilization in Web Applications</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Full Stack Engineering</span>Proficiency in Frontend and Backend Languages/Frameworks</li>
-                        <li><span>Web Development</span>Database management and API utilization in Web Applications</li>
-                        <li><span>App Development</span>Building Android/iOS apps</li>
+                        <li><span>2020 - Present</span><br>Business Analyst at Providence Health</li>
+                        <li><span>2020 - Present</span><br>Full Stack Developer & Property Manager at Turtle Synergy</li>
+                        <li><span>2019 - 2021</span><br>Lead Research Analyst at UC Irvine Health</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Full Stack Engineering</span>Proficiency in Frontend and Backend Languages/Frameworks</li>
-                        <li><span>Web Development</span>Database management and API utilization in Web Applications</li>
-                        <li><span>App Development</span>Building Android/iOS apps</li>
+                        <li><span>2023</span><br>Full Stack Development Course at App Academy, San Francisco</li>
+                        <li><span>2021</span><br>BA in Business Economics and Minor in Biology at the University of California, Irvine</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- ---------------------------services------------------------ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Full Stack Development</h2>
+                <p>Insert Text here</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>Insert Text here</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>App Development</h2>
+                <p>Insert Text here</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
