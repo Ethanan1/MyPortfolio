@@ -102,11 +102,16 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
+.about-col-2 p{
+    font-size: 20px;
+}
+
 .sub-title {
     font-size: 60px;
     color: black;
     font-weight: 600;
 }
+
 
 .tab-titles {
     display: flex;
@@ -115,7 +120,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -142,7 +147,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: darkblue;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .tab-contents {
@@ -151,6 +156,7 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
+    font-size: 25px;
 }
 
 /* ----------------services---------------- */
