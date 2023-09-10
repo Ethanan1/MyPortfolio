@@ -12,12 +12,14 @@
     <div class="container">
         <nav>
             <img src="../PERSONAL-PORTFOLIO/images/ethan_logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Portfolio</a></li>
                 <li><a href='#'>Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Software Engineer</p>
@@ -103,33 +105,63 @@
         <h1 class="sub-title">My Portfolio</h1>
         <div class="work-list">
             <div class="work">
-                <img src="http://placehold.it/">
+                <img src="../PERSONAL-PORTFOLIO/images/Slack_cover.png">
                 <div class="layer">
                     <h3>Collaboration & Messaging Platform</h3>
-                    <p>Slack CLone is a team collaboration and messaging platform designed to streamline communication through channels, direct messaging, and third-party integrations.</p>
+                    <p>Slack Clone is a team collaboration and messaging platform designed to streamline communication through channels, direct messaging, and third-party integrations.</p>
                     <a href="#"><i class="fa-solid fa-message"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="http://placehold.it/">
+                <img src="../PERSONAL-PORTFOLIO/images/spotify-ui.jpeg">
                 <div class="layer">
-                    <h3>Collaboration & Messaging Platform</h3>
-                    <p>Slack CLone is a team collaboration and messaging platform designed to streamline communication through channels, direct messaging, and third-party integrations.</p>
-                    <a href="#"><i class="fa-solid fa-message"></i></a>
+                    <h3>Web Music Player</h3>
+                    <p>The web app utilizes the Spotify API to curate personalized playlists, analyze listening habits, and discover new music tailored to user preferences.</p>
+                    <a href="#"><i class="fa-solid fa-music"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="http://placehold.it/">
+                <img src="../PERSONAL-PORTFOLIO/images/Airbnb.jpeg">
                 <div class="layer">
-                    <h3>Collaboration & Messaging Platform</h3>
-                    <p>Slack CLone is a team collaboration and messaging platform designed to streamline communication through channels, direct messaging, and third-party integrations.</p>
-                    <a href="#"><i class="fa-solid fa-message"></i></a>
+                    <h3>Vacapp</h3>
+                    <p>This web application enabling users to explore, book unique stays, and list their own properties with seamless user experience.</p>
+                    <a href="#"><i class="fa-solid fa-plane"></i></a>
                 </div>
             </div>
         </div>
+        <a href="#" class="btn">See more</a>
     </div>
 </div>
 
+<!-- -------------------contact---------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>etxnguyen@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>C:714-312-9665</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ethannguyen-exceptionhandler/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/Ethanan1"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="../PERSONAL-PORTFOLIO/images/Ethan Nguyen - Resume.docx (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©EthanNguyen. Made with passion <i class="fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
 
 <script>
 
@@ -145,6 +177,18 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
     }
 
 </script>
