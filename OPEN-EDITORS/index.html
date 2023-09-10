@@ -152,11 +152,11 @@
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span ig="msg">hello</span>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@
 </script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzK7KIghq_HbA7wvO8jOvKzadQQlvmGD3n62uyW6MIOyXtIui4tFBpnn1tEoBFrE3nt/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Iv7yZkAlrXfcnL722E_DXTbE8eylMJNIS1PrP-3oj5mCgVaW4OHoX-KZugByFZr6/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg')
 
